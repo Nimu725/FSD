@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> pseudo classes and pseudo elements</title>
+        <style>
+            input[type="number"]:out-of-range{
+                border:2px solid red
+            } 
+            input[type="number"]:in-range{
+                border:2px solid green
+            } 
+            input[type="email"]:invalid{
+                border:2px solid red
+            }
+            p::first-letter{
+                font-size: 50px;
+                color: red;
+            
+            }
+            p::first-line{
+                font-size: 20;
+                color: green;
+                text-decoration: underline;
+            
+            }
+            p::first-line{
+                font-size: 20;
+                color: green;
+                text-decoration: underline;
+            }
+            p::before{
+                content: "KLU:";
+            }
+            p::after{
+                content: "Topic Over";
+            }
+            p:: ::selection{
+                background-color: gray;
+                color: white;
+            }
+            li::marker{
+                color:red;
+            }
+            .c1{
+                list-style-type: none;
+            }
+            .c1 li::before{
+                content: "\2713";
+                color: green;
+                margin-right: 5px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        Enter age:<input type="number" placeholder="enter age" min="2" max="18" style="width:50 px;">
+        <br>
+        <br>
+
+        Enter E-mail:<input type="email" placeholder="enter email address">
+        <br>
+        <br>
+        <p>
+            Spring Boot is a Java framework that makes it easier to create and run Java applications. It simplifies the configuration and setup process, allowing developers to focus more on writing code for their applications.
+            This Spring Boot Tutorial is a comprehensive guide that covers both basic and advanced concepts of the Spring Framework. It is designed for beginners as well as professionals.
+            Spring Boot, a module of the Spring framework, facilitates Rapid Application Development (RAD) capabilities.
+        </p>
+        <ul>
+            <li>
+                one
+            </li>
+            <li>
+                Two
+            </li>
+
+        </ul>
+        <ul class="c1">
+            <li>
+                cse
+            </li>
+            <li>
+                csit
+            </li>
+            <li>
+                ai&ds
+            </li>
+
+        </ul>
+
+
+
+    </body>
+</html>
